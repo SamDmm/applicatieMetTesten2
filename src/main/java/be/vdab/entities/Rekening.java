@@ -1,0 +1,12 @@
+package be.vdab.entities;
+
+import java.math.BigDecimal;
+
+public class Rekening {
+	public void storten(BigDecimal bedrag) {
+		throw new UnsupportedOperationException();
+	}
+	public BigDecimal getSaldo() {
+		throw new UnsupportedOperationException();
+	}
+}

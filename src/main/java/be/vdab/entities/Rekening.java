@@ -3,10 +3,11 @@ package be.vdab.entities;
 import java.math.BigDecimal;
 
 public class Rekening {
+	private BigDecimal saldo = BigDecimal.ZERO;
 	public void storten(BigDecimal bedrag) {
-		throw new UnsupportedOperationException();
+		saldo = saldo.add(bedrag);
 	}
 	public BigDecimal getSaldo() {
-		throw new UnsupportedOperationException();
+		return saldo;
 	}
 }

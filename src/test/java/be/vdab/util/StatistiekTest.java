@@ -21,11 +21,11 @@ public class StatistiekTest {
 	public void hetGemiddeldeVanEenLegeVerzamelingKanJeNietBerekenen() {
 		Statistiek.getGemiddelde(new BigDecimal[] { });
 	}
-	@Test(expected = IllegalArgumentException.class)
+	@Test(expected = NullPointerException.class)
 	public void hetGemiddeldeVanNullKanJeNietBerekenen() {
 		Statistiek.getGemiddelde(null);
 	}
-	@Test(expected = IllegalArgumentException.class)
+	@Test(expected = NullPointerException.class)
 	public void eenArrayElementMagNietNullBevatten() {
 		Statistiek.getGemiddelde(new BigDecimal[] { null });
 	}

@@ -28,6 +28,5 @@ public class LandServiceTest {
 		assertEquals(0, BigDecimal.valueOf(0.25).compareTo(landService.findVerhoudingOppervlakteAlleLanden("B")));
 		verify(landRepository).findOppervlakteAlleLanden();
 		verify(landRepository).read("B");
-		
 	}
 }

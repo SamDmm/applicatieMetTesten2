@@ -2,6 +2,8 @@ package be.vdab.services;
 
 import static org.junit.Assert.assertEquals;
 
+import java.math.BigDecimal;
+
 import org.junit.Before;
 import org.junit.Test;
 import be.vdab.repositories.KostRepository;
@@ -21,7 +23,7 @@ public class WinstServiceTest {
 	}
 	@Test
 	public void deTotaleWinstIsTotaleOpbrengstMinTotaleKost() {
-		assertEquals(5, winstService.getWinst());
+		assertEquals(0, winstService.getWinst().compareTo(BigDecimal.valueOf(5)));
 	}
 
 }

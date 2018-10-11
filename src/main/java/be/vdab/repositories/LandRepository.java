@@ -1,4 +1,4 @@
-package repositories;
+package be.vdab.repositories;
 
 import be.vdab.entities.Land;
 

@@ -13,6 +13,6 @@ public class WinstService {
 		this.kostRepository = kostRepository;
 	}
 	public BigDecimal getWinst() {
-		return new UnsupportedOperationException();
+		throw new UnsupportedOperationException();
 	}
 }
